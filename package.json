@@ -1,0 +1,24 @@
+{
+  "name": "latest-sst",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "sst dev --stage dev-latest-sst",
+    "build": "sst build --stage dev-latest-sst",
+    "deploy": "sst deploy --stage dev-latest-sst",
+    "remove": "sst remove --stage dev-latest-sst",
+    "console": "sst console --stage dev-latest-sst",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "sst": "2.0.31",
+    "aws-cdk-lib": "2.62.2",
+    "constructs": "10.1.156",
+    "typescript": "^4.9.5",
+    "@tsconfig/node16": "^1.0.3"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
